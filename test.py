@@ -6,7 +6,7 @@ def test_getbalance():
     assert obj.get_balance() == 20
 
 def test_removebalance():
-    obj = Wallet(50)
+    obj = Waloulet(50)
     obj.remove_balance(20)
     assert obj.get_balance() == 30
 
