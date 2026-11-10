@@ -1,0 +1,18 @@
+name: Workflow
+
+on: push
+
+jobs:
+  probar_software:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Bajar codigo
+        uses: actions/checkout@v7
+
+      - name: Instalar pytest
+        run: pip install pytest
+
+      - name: Ejecutar Tests
+        uses: pytest test.py
+        run: pytest test.py
